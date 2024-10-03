@@ -9,7 +9,6 @@ import {
   SiFigma,
   SiGooglecloud,
   SiGrafana,
-  SiJenkins,
   SiMysql,
   SiPostgresql,
   SiPrisma,
@@ -20,7 +19,7 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/tooltip";
+} from "@/components/Tooltip";
 
 interface Technology {
   icon: React.ReactElement;

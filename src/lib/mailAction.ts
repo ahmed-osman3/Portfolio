@@ -1,9 +1,10 @@
 "use server";
 
 import React from "react";
-import { Resend } from "resend";
+import { ErrorResponse, Resend } from "resend";
 import ContactFormEmail from "@/components/EmailForm";
 import { contactSchema } from "./schema";
+import Error from "next/error";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -66,9 +67,9 @@ export const sendEmail = async (
         message: data!.id,
         type: 'success'
     }
-  } catch (error: any) {
+  } catch (error) {
     return {
-      message: error.message,
+      message: (error as ErrorResponse).message,
       type: 'error'
     };
   }

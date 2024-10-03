@@ -1,12 +1,8 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import cn from "classnames";
-import AnimatedBackground from "@/components/AnimatedBackground";
 import { TextEffect } from "@/components/TextWriter";
-import { Download, Linkedin, LucideLinkedin } from "lucide-react";
-import { LinkedInLogoIcon } from "@radix-ui/react-icons";
+import { Download } from "lucide-react";
 import ExperienceSection from "./(sections)/Experience";
 import { FloatingNav } from "@/components/Navbar";
 import SkillsSection from "./(sections)/Skills";
@@ -89,7 +85,9 @@ export default function Navigation() {
         {TABS.map((tab, index) => (
           <section
             key={index}
-            ref={(el) => (sectionRefs.current[index] = el)}
+            ref={(el) => {
+              sectionRefs.current[index] = el;
+            }}
             className="min-h-screen flex items-center relative z-10"
           >
             <div className="w-full mx-auto px-4">

@@ -1,5 +1,3 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";

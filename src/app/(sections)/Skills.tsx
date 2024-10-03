@@ -1,26 +1,4 @@
-import {
-  Code,
-  Database,
-  Globe,
-  Server,
-  Smartphone,
-  Terminal,
-  Layers,
-  PenTool,
-  FileJson,
-  Braces,
-  Palette,
-  Coffee,
-  Snowflake,
-  LayoutGrid,
-  Cpu,
-  GitBranch,
-  Box,
-  Figma,
-  GraduationCap,
-  Calendar,
-  Book,
-} from "lucide-react";
+import { Globe, Server, PenTool } from "lucide-react";
 import {
   RiCss3Fill,
   RiFlutterFill,
@@ -32,9 +10,7 @@ import {
   RiReactjsFill,
 } from "react-icons/ri";
 import {
-  SiCypress,
   SiDigitalocean,
-  SiDjango,
   SiDocker,
   SiExpress,
   SiFigma,
@@ -49,7 +25,6 @@ import {
 } from "react-icons/si";
 import { TbBrandAws, TbBrandReactNative } from "react-icons/tb";
 import { motion, Variants } from "framer-motion";
-import { IconType } from "react-icons";
 
 const skillCategories = [
   {
@@ -206,8 +181,8 @@ export default function SkillsSection() {
           <span className="absolute bottom-0 left-0 w-full h-0 transition-all duration-300 ease-in-out bg-[#009080] group-hover:h-full -z-10"></span>
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category) => (
-            <SkillsCard category={category} />
+          {skillCategories.map((category, index) => (
+            <SkillsCard key={index} category={category} />
           ))}
         </div>
       </div>
