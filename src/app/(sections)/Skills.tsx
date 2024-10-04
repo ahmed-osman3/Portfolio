@@ -18,6 +18,7 @@ import {
   SiPostgresql,
   SiPostman,
   SiPython,
+  SiScala,
   SiSocketdotio,
   SiTypescript,
   SiVisualstudiocode,
@@ -52,6 +53,7 @@ const skillCategories = [
       { name: "Java", icon: RiJavaFill },
       { name: "Socket.io", icon: SiSocketdotio },
       { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "Scala", icon: SiScala },
     ],
   },
   {
