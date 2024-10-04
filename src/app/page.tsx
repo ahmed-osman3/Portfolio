@@ -90,16 +90,16 @@ export default function Navigation() {
             }}
             className="min-h-screen flex items-center relative z-10"
           >
-            <div className="w-full mx-auto px-4">
+            <div className="w-full mx-auto md:px-4">
               {index === 0 && (
-                <div className="h-full w-full flex flex-col items-center">
+                <div className="h-full  w-full flex flex-col items-center">
                   <TextEffect>Hi, I'm Ahmed 👋</TextEffect>
-                  <h3 className="text-xl mt-10 font-thin ">
+                  <h3 className="text-xl mt-10 w-full text-center font-thin ">
                     Solving problems and building solutions !
                   </h3>
                   <div className="flex gap-4 mt-20 items-center flex-col sm:flex-row w-full justify-center">
                     <a
-                      className="rounded-full hover:text-zinc-950 border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+                      className="rounded-full hover:text-zinc-950 border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] w-28 dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
                       href="/resume.pdf"
                       target={"_blank"}
                     >

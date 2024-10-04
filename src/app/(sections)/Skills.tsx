@@ -174,7 +174,7 @@ export default function SkillsSection() {
   return (
     <>
       <div className="h-full flex flex-col md:mx-20 gap-20">
-        <h1 className="relative inline-block px-1 py-1.5 text-7xl lg:text-8xl font-bold transition-colors duration-300 ease-in-out group h-fit w-fit">
+        <h1 className="relative inline-block px-1 py-1.5 text-4xl text-center md:text-start sm:text-6xl md:text-8xl w-full md:w-fit font-bold transition-colors duration-300 ease-in-out group h-fit">
           <span className="relative z-10 group-hover:text-white h-fit">
             Skills
           </span>
@@ -187,7 +187,7 @@ export default function SkillsSection() {
         </div>
       </div>
       <div className="flex flex-col md:mx-20 mt-20 gap-8 mb-20">
-        <h1 className="relative inline-block px-1 py-1.5 text-5xl lg:text-6xl font-bold transition-colors duration-300 ease-in-out group h-fit w-fit">
+        <h1 className="relative inline-block px-1 py-1.5 text-3xl text-center md:text-start sm:text-4xl md:text-6xl  w-full transition-colors duration-300 ease-in-out group h-fit md:w-fit">
           <span className="relative z-10 group-hover:text-white h-fit">
             Education
           </span>

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X } from "lucide-react";
+import { Contact, X } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -53,7 +53,7 @@ export default function ContactFormDialog({
     <>
       <button
         onClick={handleOpen}
-        className="rounded-full border border-solid border-white/[.145] hover:bg-white/[.145] transition-colors flex items-center justify-center hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
+        className="rounded-full border border-solid border-white/[.145] hover:bg-white/[.145] transition-colors flex items-center justify-center hover:border-transparent text-sm sm:text-base w-28 h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
       >
         Contact Me
       </button>
