@@ -100,7 +100,7 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
 
   return (
     <motion.div
-      className="relative bg-[var(--timeline-background)] border border-transparent dark:border-white/[0.2] p-6 rounded-lg shadow-xl overflow-hidden"
+      className="relative bg-[var(--timeline-background)] border border-white/[0.2] p-6 rounded-lg shadow-xl overflow-hidden"
       variants={cardVariants}
       whileHover="hover"
       initial="initial"

@@ -4,6 +4,8 @@ import Footer from "@/components/footer";
 
 import { Toaster } from "react-hot-toast";
 
+import { ThemeProvider } from "next-themes";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {

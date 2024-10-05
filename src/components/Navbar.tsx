@@ -31,13 +31,13 @@ export const MobileNavbar = ({
 
   return (
     <div className={cn("fixed top-0 left-0 right-0 z-50", className)}>
-      <div className="flex justify-between items-center p-4 bg-white dark:bg-[#4c547e] shadow-md">
-        <button onClick={toggleMenu} className="text-black dark:text-white">
+      <div className="flex justify-between items-center p-4  bg-[#4c547e] shadow-md">
+        <button onClick={toggleMenu} className="text-white">
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
         <a
           href="http://www.github.com/ahmed-osman3/Portfolio"
-          className="text-black dark:text-white"
+          className="text-white"
         >
           <GitHubLogoIcon className="w-6 h-6" />
         </a>
@@ -49,16 +49,14 @@ export const MobileNavbar = ({
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.2 }}
-            className="bg-white dark:bg-[#4c547e] shadow-md"
+            className="bg-[#4c547e] shadow-md"
           >
             {navItems.map((navItem, idx) => (
               <button
                 key={`nav-item-${idx}`}
                 className={cn(
                   "w-full px-4 py-3 text-left text-sm font-medium",
-                  activeIndex === idx
-                    ? "text-blue-600 dark:text-blue-400"
-                    : "text-black dark:text-white"
+                  activeIndex === idx ? "text-blue-400" : "text-white"
                 )}
                 onClick={() => {
                   navItem.onClick?.();
@@ -151,7 +149,7 @@ export const FloatingNav = ({
           duration: 0.2,
         }}
         className={cn(
-          " hidden md:flex max-w-fit  fixed top-5 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-[#4c547e] bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-4",
+          " hidden md:flex max-w-fit  fixed top-5 inset-x-0 mx-auto borderborder-white/[0.2] rounded-full bg-[#4c547e] shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] pr-2 pl-8 py-2  items-center justify-center space-x-4",
           className
         )}
       >
@@ -159,7 +157,7 @@ export const FloatingNav = ({
           <button
             key={`link=${idx}`}
             className={cn(
-              "relative   items-center flex space-x-1 dark:hover:text-white hover:text-neutral-500",
+              "relative   items-center flex space-x-1 hover:text-white ",
               activeIndex == idx ? "text-white" : "text-white/[0.5]"
             )}
             onClick={navItem.onClick}
@@ -168,7 +166,7 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </button>
         ))}
-        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white/[0.5] px-4 py-2 rounded-full hover:text-white duration-100 transition">
+        <button className="border text-sm font-medium relative border-white/[0.2] text-white/[0.5] px-4 py-2 rounded-full hover:text-white duration-100 transition">
           <a href="http://www.github.com/ahmed-osman3/Portfolio">
             <GitHubLogoIcon className="" />
           </a>

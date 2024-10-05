@@ -95,7 +95,7 @@ const SkillsCard = ({
   return (
     <motion.div
       key={category.name}
-      className="bg-[var(--timeline-background)] border border-transparent dark:border-white/[0.2] p-6 rounded-lg shadow-xl overflow-hidden"
+      className="bg-[var(--timeline-background)] border border-white/[0.2] p-6 rounded-lg shadow-xl overflow-hidden"
       whileHover={"hover"}
       initial="initial"
       variants={cardVariants}
@@ -131,7 +131,7 @@ const SkillsCard = ({
 const EducationCard = () => {
   return (
     <motion.div
-      className="bg-[var(--timeline-background)] border border-transparent dark:border-white/[0.2] p-6 rounded-lg shadow-xl overflow-hidden"
+      className="bg-[var(--timeline-background)] border border-white/[0.2] p-6 rounded-lg shadow-xl overflow-hidden"
       whileHover={"hover"}
       initial="initial"
       variants={cardVariants}
