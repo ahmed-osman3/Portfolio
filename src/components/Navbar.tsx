@@ -36,6 +36,7 @@ export const MobileNavbar = ({
           {isOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
         <a
+          target={"_blank"}
           href="http://www.github.com/ahmed-osman3/Portfolio"
           className="text-white"
         >
@@ -167,7 +168,10 @@ export const FloatingNav = ({
           </button>
         ))}
         <button className="border text-sm font-medium relative border-white/[0.2] text-white/[0.5] px-4 py-2 rounded-full hover:text-white duration-100 transition">
-          <a href="http://www.github.com/ahmed-osman3/Portfolio">
+          <a
+            target={"_blank"}
+            href="http://www.github.com/ahmed-osman3/Portfolio"
+          >
             <GitHubLogoIcon className="" />
           </a>
 
